@@ -1,0 +1,29 @@
+
+
+.ui-page.ui-page-theme-a.ui-page-active { background: #FFFFFF url(../images/pghgastro4.png) no-repeat 50%; 
+background-size: 250px 250px; 
+margin-bottom: 70px;
+}
+
+
+ 
+.ui-page.ui-page-theme-a.ui-page-active .ui-header.ui-bar-inherit {display: none; }
+
+
+.ui-page.ui-page-theme-a.ui-page-active .ui-content {padding-top: 140px;}
+
+.ui-page.ui-page-theme-c.ui-page-footer-fixed.ui-page-active .ui-content  {padding-top: 100px;}
+
+.ui-page.ui-page-theme-d.ui-page-footer-fixed.ui-page-active .ui-content  {padding-top: 80px;}
+
+.ui-page.ui-page-theme-e.ui-page-footer-fixed.ui-page-active .ui-content  {padding-top: 70px;}
+
+
+.ui-icon-cutlery:after { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%20Tiny%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11-tiny.dtd%22%3E%3Csvg%20version%3D%221.1%22%20baseProfile%3D%22tiny%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2216px%22%20height%3D%2216px%22%20viewBox%3D%220%200%20500%20500%22%20xml%3Aspace%3D%22preserve%22%3E%20%3Cpath%20d%3D%22M178.571%2017.857v178.571q0%2017.020-9.905%2030.971t-25.809%2019.531v217.355q0%2014.509-10.603%2025.112t-25.112%2010.603h-35.714q-14.509%200-25.112-10.603t-10.603-25.112v-217.355q-15.904-5.581-25.809-19.531t-9.905-30.971v-178.571q0-7.254%205.301-12.556t12.556-5.301%2012.556%205.301%205.301%2012.556v116.071q0%207.254%205.301%2012.556t12.556%205.301%2012.556-5.301%205.301-12.556v-116.071q0-7.254%205.301-12.556t12.556-5.301%2012.556%205.301%205.301%2012.556v116.071q0%207.254%205.301%2012.556t12.556%205.301%2012.556-5.301%205.301-12.556v-116.071q0-7.254%205.301-12.556t12.556-5.301%2012.556%205.301%205.301%2012.556zM392.857%2017.857v446.429q0%2014.509-10.603%2025.112t-25.112%2010.603h-35.714q-14.509%200-25.112-10.603t-10.603-25.112v-142.857h-62.5q-3.627%200-6.278-2.651t-2.651-6.278v-223.214q0-36.831%2026.228-63.058t63.058-26.228h71.429q7.254%200%2012.556%205.301t5.301%2012.556z%22%20fill%3D%22%23ffffff%22%20%2F%3E%3C%2Fsvg%3E') }
+.ui-nosvg .ui-icon-cutlery:after { background-image url(../includes/themes/images/cutlery.png'); }
+
+.ui-icon-glass:after { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%20Tiny%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11-tiny.dtd%22%3E%3Csvg%20version%3D%221.1%22%20baseProfile%3D%22tiny%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2216px%22%20height%3D%2216px%22%20viewBox%3D%220%200%20500%20500%22%20xml%3Aspace%3D%22preserve%22%3E%20%3Cpath%20d%3D%22M474.051%2051.897q0%209.766-11.998%2021.763l-176.339%20176.339v214.286h89.286q7.254%200%2012.556%205.301t5.301%2012.556-5.301%2012.556-12.556%205.301h-250q-7.254%200-12.556-5.301t-5.301-12.556%205.301-12.556%2012.556-5.301h89.286v-214.286l-176.339-176.339q-11.998-11.998-11.998-21.763%200-6.417%205.022-10.184t10.603-4.883%2011.998-1.116h392.857q6.417%200%2011.998%201.116t10.603%204.883%205.022%2010.184z%22%20fill%3D%22%23ffffff%22%20%2F%3E%3C%2Fsvg%3E') }
+.ui-nosvg .ui-icon-glass:after { background-image url(../includes/themes/images/glass.png'); }
+
+.ui-icon-phone:after { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%20Tiny%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11-tiny.dtd%22%3E%3Csvg%20version%3D%221.1%22%20baseProfile%3D%22tiny%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2216px%22%20height%3D%2216px%22%20viewBox%3D%220%200%20500%20500%22%20xml%3Aspace%3D%22preserve%22%3E%20%3Cpath%20d%3D%22M392.857%20345.982q0%207.534-2.79%2019.671t-5.859%2019.113q-5.859%2013.951-34.040%2029.576-26.228%2014.23-51.897%2014.23-7.534%200-14.648-0.977t-16.043-3.488-13.253-4.046-15.485-5.72-13.672-5.022q-27.344-9.766-48.828-23.159-35.714-22.042-73.8-60.128t-60.128-73.8q-13.393-21.484-23.159-48.828-0.837-2.511-5.022-13.672t-5.72-15.485-4.046-13.253-3.488-16.043-0.977-14.648q0-25.669%2014.23-51.897%2015.625-28.181%2029.576-34.040%206.976-3.069%2019.113-5.859t19.671-2.79q3.906%200%205.859%200.837%205.022%201.674%2014.788%2021.206%203.069%205.301%208.371%2015.067t9.766%2017.718%208.649%2014.927q0.837%201.116%204.883%206.976t5.999%209.905%201.953%207.952q0%205.581-7.952%2013.951t-17.299%2015.346-17.299%2014.788-7.952%2012.835q0%202.511%201.395%206.278t2.372%205.72%203.906%206.696%203.208%205.301q21.206%2038.226%2048.549%2065.569t65.569%2048.549q0.558%200.279%205.301%203.208t6.696%203.906%205.72%202.372%206.278%201.395q5.022%200%2012.835-7.952t14.788-17.299%2015.346-17.299%2013.951-7.952q3.906%200%207.952%201.953t9.905%205.999%206.976%204.883q6.976%204.185%2014.927%208.649t17.718%209.766%2015.067%208.371q19.531%209.766%2021.206%2014.788%200.837%201.953%200.837%205.859z%22%20fill%3D%22%23ffffff%22%20%2F%3E%3C%2Fsvg%3E') }
+.ui-nosvg .ui-icon-phone:after { background-image url(../includes/themes/images/phone.png'); }

@@ -1,0 +1,832 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>PGH</title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="minimal-ui">
+	<link rel="stylesheet" href="includes/themes/pgh_wh_rd.min.css" />
+	<link rel="stylesheet" href="includes/themes/jquery.mobile.icons.min.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	<link rel="stylesheet" href="includes/pgh.css" />
+	
+	<script type = "text/javascript" charset = "utf-8" src="phonegap.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+				
+</head>
+
+<body onload="initialize()">
+	<!-- Homepage -->
+	<div data-role="page" id="home" data-theme="a">
+		<div data-role="header">
+			<h1>P.G.H.</h1>
+		</div>
+			<div data-role="footer" data-position="fixed" style="text-align: center;">
+				<a href="#Menu" class="ui-icon-cutlery" data-role="button" data-icon="cutlery" data-inline="true" data-iconpos="notext"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext"></a>
+				<a href="#about_us" data-role="button" data-icon="info" data-inline="true" data-iconpos="notext"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-iconpos="notext" data-transition="flow"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-inline="true" data-iconpos="notext" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164064669 data-role="button" data-icon="phone" data-inline="true" data-iconpos="notext"></a>
+			</div>
+	</div>
+	
+	<!-- About Us -->
+	<div data-role="page" id="about_us" data-title="About Us" data-theme="c">
+		<div data-role="header">
+			<h1>About Us</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<p>We are awesome! Eat, drink, and be festive with our excellent award winning Gastro-Pub fare, our warm and friendly staff who provide top-notch service, and our rocking DJs. Lunch, Dinner, or Late Night, it&#39;s always a good time.</p>
+			
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<!-- Menu -->
+	<div data-role="page" id="Menu" data-title="Menu" data-theme="e">
+		<div data-role="header"  style="margin-bottom: 30px;">
+			<h1>Menu</h1>
+			<a href="#home"  data-icon="home" data-iconpos="notext"></a>
+		</div>
+		<div data-role="content" style="text-align: center; margin-top: 80px;">
+			<a href="#brunch_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Brunch</a>
+			<a href="#dinner_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Dinner</a>
+			<a href="#late_night" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Late Night</a>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Brunch -->
+	<div data-role="page" id="brunch_menu" data-title="Brunch" data-theme="c">
+		<div data-role="header">
+			<h1>Brunch</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<a href="#eggs_menu" data-role="button" data-icon="star" data-iconpos="right"  data-transition="pop">Eggs &#8217;N Stuff</a>
+			<a href="#podge_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Hodgepodge</a>
+			<a href="#hand_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Hand Held</a>
+			<a href="#kids_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Kids Menu</a>
+			<a href="#sides_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Sides</a>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+                                <a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Eggs N' Stuff -->
+	<div data-role="page" id="eggs_menu" data-title="Eggs" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>Eggs N&#8217 Stuff</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>EGGS 'N STUFF</h3>
+			<h6>Add your Sides from the <strong>&ldquo;Sides&rdquo;</strong> Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<p>Bacon, Peameal, Sausage, House-Smoked Cured Salmon &#124; 3</p>
+			<p>House-Baked Sourdough or Multigrain Toast, R&ouml;sti Hash &#124; 2</p>
+			<h4>Big Breakfast &#124; 9</h4>
+			<p>3 Sunny or Scrambled Organic Eggs, Bacon or Sausage, R&ouml;sti Hash, House Baked Sourdough or Multigrain Toast</p>
+			<h4>Omelette du Jour &#124; 13</h4>
+			<p>3 Organic Eggs, R&ouml;sti Hash, Organic Greens, House Baked Sourdough or Multigrain Toast</p>
+			<h4>Egg White Omelette du Jour &#124; 14</h4>
+			<p>3 Organic Egg Whites, Organic Greens, House-Baked Sourdough or Multigrain Toast</p>
+			<h4>Duck Benny &#124; 13</h4>
+			<p>2 Poached Organic Eggs, Duck Confit, Truffled Hollandaise, R&ouml;sti Hash, House-Baked Jalepe&ntilde;o-Black River Maple Cheddar Biscuit, Organic Greens</p>
+			<h4>Smoked Salmon Benny &#124; 15</h4>
+			<p>2 Poached Organic Eggs, House-Smoked Cured Salmon, Truffled Hollandaise, R&ouml;sti-Hash, House-Baked Jalepe&ntilde;o-Black River Maple Cheddar Biscuit, Organic Green</p>
+			<h4>Steak &amp; Eggs &#124; 17</h4>
+			<p>8 oz AAA Baseball Sirloin, 2 Sunny or Scrambled Organic Eggs, R&ouml;sti Hash, House-Baked Sourdough or Multigrain Toast</p>
+			<h4>Burrito Grande &#124; 15</h4>
+			<p>2 Organic Eggs, Farmer&#8217;s Sausage, Mexicana &amp; Aged Cheddar, Spiced Monterey Jack, Red Peppers, Fresh Jalape&ntilde;os, Organic Greens, Served with Crema, Salsa Rojo, and Guacamole</p>
+			<h4>Stuffed French Toast &#124; 15</h4>
+			<p>House-Baked Challah, Mascarpone Cheese, Callebaut Chocolate, Farm Fresh Ontario Maple Syrup, Fresh Seasonal Berries, Sausage or Bacon, House-Made Whipped Cream</p>
+			<h4>Mexican Waffle &#124; 15</h4>
+			<p>3 Organic Eggs, Bison Chili, House-Made Savoury Waffle, Black River Maple Cheddar served with Crema, Salsa Rojo, and Guacamole</p>
+			<h4>Breakfast Poutine &#124; 14</h4>
+			<p>3 Poached Organic Eggs, Wild Boar Belly Lardons, Truffled Hollandaise, Marinated PQ Curds, Duck Fat Tater Tots</p>
+			<h4>Super Yogurt &#124; 8 &#47; Big &#124; 12</h4>
+			<p>Balkan-Style Goat Yogurt, House-Made Organic Granola Mix (Honeycomb, Oats, Cacao Crunch, Dried Tibetan Goji Berries) Un&#45;Pasteurized Honey, Fresh Seasonal Berries</p>
+			<h3>RUFFAGE</h3>
+			<h4>Organic Greens Appetizer &#124; 8 &#47; Entr&eacute;e &#124; 12</h4>
+			<p>Organic Artisanal Greens, Accompaniments, Balsamic &amp; Cold Pressed EVO or Creamy Parmigiano-Reggiano Peppercorn. (Goat Cheese |3 Pulled Chicken |5)</p>
+			<h4>Caesar Your Way App  &#124; 7 &#47; Entree &#124; 11</h4>
+			<p>How do YOU like it? Light, Medium, or Heavily Dressed? Romaine, House-Made Caesar Dressing, Chopped Crisp Bacon, House-Baked Baguette Croutons, Grana Padano Crisps (Add Pulled Chicken |5)</p>
+			<h4>&#8217;37 Cobb &#124; 13 &#47 Big &#124; 19</h4>
+			<p>Pulled Chicken, Organic Artisanal Greens, L&#8217;Ermite Bleu, Bacon, Salsa Rojo, Avacado, Organic Egg, Traditional Derby Dressing</p>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Hodgepodge -->
+	<div data-role="page" id="podge_menu" data-title="Podge" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>HodgePodge</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>HODGEPODGE</h3>
+			<h6>Add your Sides from the <strong>&ldquo;Sides&rdquo;</strong> Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<h4>Mac & Cheese &#124; 15 &#47; Big &#124; 24</h4>
+			<p>Vesuvio Pasta, Gruyere, Aged Cheddar, L&#8217;Ermite Bleu, Black Truffles, Shallots, Cream, Truffle Oil, House-Baked Jalape&ntilde;o-Cheddar Biscuit Crust &#40;Add Bacon 2 &#47; 4 &#45; Substitute Gluten Free&#63 No Problem&#33;&#41;</p>
+			<h4>Quesadilla &#124; 15</h4>
+			<p>Grilled Tortilla, Mexicana &amp; Aged Cheddar, Spiced Monterey Jack, Diced Jalape&ntilde;o, R&ouml;sti-Hash, Served with Crema, Salsa Rojo, and Guacamole &#40;Add Duck Fat Confit &#45; Pulled Pork or Pulled Chicken &#124; 5 &#47; Double Cheese &#124; 8&#41;</p>
+			<h4>Smoked Chicken Lollipops &#124; 3 each &#40;min. order of 3&#41;</h4>
+			<p>From Our Smoker! Frenched & Dry-Rubbed Chicken Drumettes. How spicy do you like it? Georgia Peach &#38; Vadalia Onion &#40;Red Chili&#41;, Amazon &#40;Chipotle&#41;, Gator Hammock &#40;Cayenne&#41;, Marie Sharp&#8217;s &#40;Habenero&#41;</p>
+			<h5>Substitute one of our Premium Hot sauces: White Zombie &#40;Red Savina&#41;, Ghost &#40;Naga&#41;, or Ghost Dust &#124; 2</h5>
+			<h5>Add L&#8217;Ermite Bleu Dip &#124; 2 &#47; Grilled&#63; No Problem&#33;</h5>
+			<h4>One Layer Baker&#8217;s Tray Nachos Regular &#124; 16 &#47; Big &#124; 28 &#47; Party&#33; &#124; 49</h4>
+			<p>Hand&#45;Cut and Seasoned Blue &amp; Yellow Corn Tortillas, Mexicana &amp; Aged Cheddar, Spiced Monterey Jack, Diced Jalape&ntilde;os, Salsa Rojo Served with Crema, Salsa Rojo, and Guacamole</p>
+			<h5>Add Duck Fat Confit &#45; Pulled Pork or Chicken&#58; Regular &#124; 4 &#47; Big &#124; 8 &#47; Party&#33; &#124; 15</h5>
+			<h5>Double the Cheese: Regular &#124; 8 &#47; Big &#124; 15 &#47; Party&#33; &#124; 28</h5> 
+			<h5>Add Bison Chili &#124; 8</h5>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!--Handheld -->
+	<div data-role="page" id="hand_menu" data-title="HandHeld" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>Hand Held</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>HANDHELD</h3>
+			<h6>Add your Sides from the &ldquo;Sides&rdquo; Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<h4>Pulled Pork Grilled Cheese | 10 / Big | 17</h4>
+			<p>Duck Fat Confit - Pulled Pork, Black River Maple Cheddar, White Cheddar, House-Baked Sourdough, Raspberry Jalapeno Compote</p>
+			<h5>No Pork? No Problem 8 / 15</h5>
+			<h5>Add Bacon 2 / 3</h5>
+			<h4>Pulled Pork Sandwich |9</h4>
+			<p>Duck Fat Confit Pork Butt, Slaw, Arugula, House-Baked Bread</p>
+			<h4>Sloppy Joe Tacos | 10 / Big | 16</h4>
+			<p>Duck Fat Confit Lamb Shank, Mexicana &amp; Aged Cheddar, Spiced Monterey Jack, Spicy Aioli, Shredded Green Leaf, Hard Shell Tacos Served with Crema, Salsa Rojo, and Guacamole</p>
+			<h4>Organic Bison Burger | 13</h4>
+			<p>Grilled-to-Order Organic Alberta Bison, Accompaniments, House-Baked Bread</p>
+			<h5>Add Black River Maple Cheddar or L&#8217;Ermite Bleu |3</h5>
+			<h5>Caramelized Onions | 1 / Fire-Roasted Mushrooms | 3</h5>
+			<h5>Bacon strips | 3 / Additional Patty | 10</h5>
+			<h4>Fully-Loaded Bison Monster | 29</h4>
+			<p>Our Bison Burger with your choice of cheese, all the toppings, and an extra patty!</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Just For Kids -->
+	<div data-role="page" id="kids_menu" data-title="Kids" data-theme="c">
+		<div data-role="header" data-position="fixed">
+			<h1>Kids Menu</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h4>Just For Kids Choose One Item | 4</h4>
+			<p>Kids Under 10 / Includes Fountain Drinks (only)</p>
+			<p>Cheese or Pepperoni Pizza / Grilled Cheese / Mac & Cheese / Caesar Salad / Organic Greens / French Toast / Scrambled & Toast</p>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Sides -->
+	<div data-role="page" id="sides_menu" data-title="Sides" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>Sides</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>SIDES</h3>
+			<p>DF Frites | 3</p>
+			<p> Organic Greens | 4</p>
+			<p>DF Sweet Frites | 4</p>
+			<p>Caesar | 4</p>
+			<p>Onion Rings | 5</p>
+			<p>French Green Beans | 5</p>
+			<p>DF Tater Tots | 5</p> 
+			<p>Cauliflower Mac & Cheese | 7</p>
+			<p>Poutine | 5</p>
+			<p>Mac&Cheese | 9</p>
+			<p>Gastrohouse Poutine | 6</p>
+			<p>Mac &amp; Cheese w/ Bacon | 10</p>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#" data-role="button" data-rel="back" data-icon="carat-d" data-inline="true" data-iconpos="notext" data-transition="slidedown"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>	
+	
+	<!-- Dinner -->
+	<div data-role="page" id="dinner_menu" data-title="Dinner" data-theme="c">
+		<div data-role="header">
+			<h1>Dinner</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<a href="#app_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Spuds, Podge, Breads</a>
+			<a href="#chefs_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Chef&#8217;s Bar & Entr&eacute;es</a>
+			<a href="#greenHands_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Hand Held &amp; Ruffage</a>
+			<a href="#lbfns_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">PM Breakfast</a>
+			<a href="#Kids_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Kids Menu</a>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Hodge, Spuds, and Flat Breads go here -->
+	<div data-role="page" id="app_menu" data-title="Apps" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>Spuds, Podge, and Breads</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center; margin-top: 20px;">
+			<h3>GASTRO&#45;SPUDS</h3>
+			<h6>Add your Sides from the <strong>&ldquo;Sides&rdquo;</strong> Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<h5>We use Duck Fat (DF). Tastier & Healthier.</h5>
+			<h4>DF Frites |7 DF Sweet Frites | 9  DF Tater Tots | 10</h4>
+			<h5>Add Spicy or Black Garlic Aioli | 1</h5>
+			<h4>Gastrohouse Poutine | 12  Big | 17</h4>
+			<p>Duck Confit, Marinated PQ Curds, DF Frites, Duck, Gravy, and Red Wine Jus (No Duck? No Problem! | 9 / Big | 13)</p>
+			<h4>Redneck Tater Poutine |16</h4>
+			<p>Lamb Confit, Truffle Pecorino, DF Tater Tots, Chives, Truffle Oil, Duck Gravy & Red Wine Jus (No Lamb? No Problem! | 14)</p>
+			<h4>Lobster Poutine | 19</h4>
+			<p>Nova Scotia Cull Lobster, Spanish Manchego, DF Frites, Lobster Velout&eacute;</p>
+			<h4>Chili-Cheese Poutine | 11</h4>
+			<p>Bison Chili, Mexicana &amp; Aged Cheddar, Spiced Monterey Jack, DF Frites, Crema, Chives</p>
+			<h3>HODGEPODGE</h3>
+			<h4>Quesadilla | 15</h4>
+			<p>Grilled Tortilla, Mexicana &amp; Aged Cheddar, Spiced Monterey Jack, Diced Jalape&ntilde;o, R&ouml;sti-Hash, Served with Crema, Salsa Rojo, and Guacamole (Add Duck Fat-Confit Pulled Pork or Pulled Chicken | 5  Double Cheese | 8)</p>
+			<h4>Chicken Lollipops | 3 each</h4>
+			<h6>(min. order of 3)</h6>
+			<p>Frenched, Dry-Rubbed &#38; Smoked Chicken Drumettes.</p>
+			<h5>Add L&#39;Ermite Bleu Dip | 2</h5>
+			<h5>Your Choice of Sauce&#58;<strong>Georgia Peach & Vadalia Onion</strong> (Red Chili), <strong>Bee Sting Honey Mustard</strong> (Habenero), <strong>Cajohn&#39;s Killer</strong> (Chipotle), <strong>Gator Hammock</strong> (Cayenne), <strong>Marie Sharp&rsquo;s</strong> (Habenero) <strong>White Zombie</strong> (Red Savina), <strong>Ghost</strong> (Naga) Grilled&#63; No Problem&#33; Add <strong>Ghost Dust</strong> | 2</h5>
+			<h4>One Layer Baker&rsquo;s Tray Nachos Regular | 16  Big | 28  Party&#33; | 49</h4>
+			<p>Hand-Cut and Seasoned Blue &amp; Yellow Corn Tortillas, Mexicana &amp; Aged Cheddar, Spiced Monterey Jack, Diced Jalape&ntilde;os, Salsa Rojo Served with Crema, Salsa Rojo, and Guacomole</p> 
+			<h5>Add Duck Fat Confit-Pulled Pork or Chicken <strong>Regular | 4  Big | 8  Party&#33; | 28</strong> (Add Bison Chili | 8)</h5>
+			<h4>Mac &amp; Fromage Large | 18  Medium | 14</h4>
+			<p>Vesuvio Pasta, Black Truffles, 4-Yr Cave-Aged Gruy&egrave;re, Aged Cheddar, L&rsquo;Ermite Bleu, Shallots, Organic Cream, Truffle Oil, House-Baked Jalape&ntilde;o-Cheddar Biscuit Crust (Add Bacon 2/4 Substitute Gluten-Free Pasta? No problem?)</p>
+			<h4>Fish et Frites Two Piece | 22 One Piece | 13</h4>
+			<p>FRESH (not frozen)</p>
+			<p>Corn Flaked-Crusted Ontario Pickerel (4 .oz), DF Frites, Slaw, Crab Tartar</p>
+			<h3>FLATBREADS</h3>
+			<p>Perfect for sharing! Add Spicy or Black Garlic Aioli | 1</p>
+			<h5>Add Prosciutto Pio Tosini | 5</h5>
+			<h4>Margarita | 19</h4>
+			<p>Italian Buffalo Mozzarella - Imported Weekly. Parmigiano-Reggiano, Pesto, Tomato Sauce, Vine-Ripened Tomatoes, Fresh Basil, 25-yr Balsamic &#38; Cold Pressed EVO</p>
+			<h4>The Fungi | 21</h4>
+			<p>Fire-Roasted Mushrooms, Ch&egrave;vre Noir, Italian Mozzarella, Grand Chevalier Ch&egrave;vre, Garlic Paste, Truffle Oil, Caramelized Onion, Fresh Herbs</p>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Chef's Bar & Entrées -->
+	<div data-role="page" id="chefs_menu" data-title="chefsBar" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>Chef&#8217;s Bar</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>CHEF&rsquo;S BAR</h3>
+			<h5>Served from 5pm</h5>
+			<h4>Oysters du Jour | Market Price</h4>
+			<p>Please ask about today&rsquo;s selection. East Coast, West Coast, and International. Fresh Horseradish. Assorted Hot sauces</p>
+			<h4>Fromage Plate | 22</h4>
+			<p>Grand Chevalier (Goat), L&rsquo;Ermite Bleu (Cow), 5-Yr Cave-Aged Manchego (Sheep), House-Baked Demi-Baguette, Cornichons, Marinated Marcona Almonds, Raspberry-Jalape&ntilde;o Compote</p>
+			<h4>Foie Gras  P&acirc;t&eacute; | 14</h4>
+			<p>Cornichons, House-Baked Crostini, Pear & Garlic Chutney</p>
+			<h4>Proscioutto Pio Tosini | 15</h4>
+			<p>Imported Italian, Marinated Marcona Almonds, Cornichons, House-Baked Demi-Baguette, Stirling European Style Butter, Bone Suckin&rsquo; Mustard</p>
+			<h4>Monstre Shrimp Cocktail | 19</h4><h6>(4 pieces)</h6>
+			<p>Blue Crab Salsa, Fresh Horseradish, Lemon</p>
+			<h4>Le Platter | 69</h4>
+			<p>12 Chef&rsquo;s Choice Oysters, Prosciutto Pio Tosini, Fromage Plate, Monstre Shrimp</p>
+			<h3>DINNER ENTR&Eacute;ES</h3>
+			<h5>Served from 5pm</h5>
+			<h4>Smoked Beer Can Poulet | 22</h4>
+			<p>24-Hour Brined, Dry-Rubbed &#38; House-Smoked Half Chicken, Jalape&ntilde;o-Black River Maple Cheddar Biscuit, Slaw</p>
+			<h4>Ribs Au Boeuf | 24</h4>
+			<p>House-Smoked BBQ&#39;d Beef Ribs, Twice-Baked Potato, Jalape&ntilde;o-Black River Maple Cheddar Biscuit, Slaw</p>
+			 <h5>Add Another Half rack | 12</h5>
+			<h4>Smoked Beer Can Poulet et Ribs Au Boeuf | 34</h4>
+			<p>Half Rack Beef Ribs & Half chicken, Twice-Baked Potato, Jalape&ntilde;o-Black River Maple Cheddar Biscuit, Slaw</p>
+			<h4>Lamb Shank | 22</h4>
+			<p>Duck Fat Confit Lamb Shank, Scallop Potato with 4-Yr Cave-Aged Gruy&egrave;re, Seasonal Vegetables, Red Wine Jus</p>
+			<h5>Add A Second Lamb Shank | 9</h5>
+			<h4>Le Cowboy Steak et Frites | 36</h4>
+			<p>16 oz. AAA Alberta Ribeye, House-Made L&#39;Ermite Bleu Gelato, DF Frites</p>
+			<h5>Add Caramelized Onions | 2 / Fire-Roasted Mushrooms | 3</h5>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Handheld and Ruffage -->
+	<div data-role="page" id="greenHands_menu" data-title="GreenHands" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>H.H. &amp; Ruffage</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>HANDHELD</h3>
+			<h6>Includes DF Frites or Organic Greens. Substitute DF Sweet Frites or DF Tater Tots <strong>3</strong> / Caesar <strong>2</strong> / Twice-Baked Potato <strong>3</strong> / Poutine <strong>4</strong> / Haute Poutine <strong>9</strong> / Chili-Cheese Poutine <strong>9</strong> / Mac et Fromage <strong>10</strong> / Mac et Fromage with Bacon <strong>13</strong></h6>
+			<h6>Add your Sides from the <strong>&ldquo;Sides&rdquo;</strong> Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<h4>Pulled Pork Grilled Fromage | 16</h4>
+			<p>Duck Fat Confit-Pulled Pork, Black River Maple Cheddar, 4-Yr Sharp White Cheddar, House-Baked Sourdough, Raspberry Jalape&ntilde;o Compote</p>
+			<h5>No Pork? No Problem! <strong>14</strong> - Add Bacon <strong>3</strong></h5>
+			<h4>Pulled Pork Sandwich | 13</h4>
+			<p>Duck Fat Confit Pork Butt, Slaw &#38; Arugula, Bread du Maison</p>
+			<h4>Triple Decker Italiano Club | 15</h4>
+			<p>Pulled Chicken, Prosciutto Pio Tosini, Gran Padano, Parmigano-Reggiano, Fresh Basil Leaves, Vine-Ripened Tomato, Leaf Lettuce, Balsamic Mayo, House-Baked Sourdough</p>
+			<h4>Bison Burger | 16</h4>
+			<p>HALF-POUND Organic Alberta Bison, Bread du Maison. Choose Your Colour!</p>
+			<h5>Add Black River Maple Cheddar or L&rsquo;Ermite Bleu | 3 / Caramelized Onions | 2 / Fire-Roasted Mushrooms | 3 / Bacon Strips | 3 / Additional Patty | 10</h5>
+			<h4>Fully Loaded Bison Monstre | 31</h4>
+			<p>Your choice of cheese, all the toppings, and an extra patty!</p>
+			<h3>RUFFAGE</h3>
+			<h4>Organic Greens</h4>
+			<h5>Entr&eacute;e | 12 / Appetizer | 8</h5>
+			<p>Organic Chef-Selected Artisanal Greens, Accompaniments, Balsamic &#38; Cold Pressed EVO or Creamy Parmigiano-Reggiano Peppercorn. (Goat Cheese | 3 Pulled Chicken | 5)</p>
+			<h4>Caesar a L&#39;Ordre</h4>
+			<h5>Entr&eacute;e | 11 / Appetizer | 7</h5>
+			<p>How do YOU like it? Light, Medium, or Heavily Dressed? Romaine, House-Made Caesar Dressing, Chopped Crisp Bacon, House-Baked Baguette Croutons, Parmigiano-Reggiano Crisps (Goat Cheese | 3 Add Pulled Chicken | 5)</p>
+			<h3>BIG RUFFAGE</h3>
+			<h4>Caprese</h4>
+			<h5>Full | 18 / Half | 10</h5>
+			<p>Vine-Ripened Tomatoes, Italian Buffalo Mozzarella - Imported Weekly, Arugula, Fresh Basil, 15-yr Balsamic & Cold Pressed EVO</p>
+			<h4>&#8217;37 Cobb</h4> 
+			<h5>Large | 16 / Medium | 12</h5>
+			<p>Pulled Chicken, Organic Chef-Selected Artisanal Greens, L&#8217;Ermite Bleu, Bacon, Salsa Rojo, Avacado, Organic Egg, Traditional Derby Dressing</p>
+			<h4>Ni&#231;oise | 23</h4>
+			<p>FRESH Coconut Oil Poached Ahi Tuna, Fingerling Potatoes, French Green Beans, Organic Eggs, Olives, Wild Caperberries, Heirloom Baby Tomatoes, Preserved Lemon Vinaigrette, Arugula</p>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Late Breakfast & Sides -->
+	<div data-role="page" id="lbfns_menu" data-title="lateBfAndSides" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>PM Breakfast</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>LATE BREAKFAST</h3>
+			<h6>Add your Sides from the <strong>&ldquo;Sides&rdquo;</strong> Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<h5>Served until 3pm</h5>
+			<h4>Omelette du Jour | 13</h4>
+			<p>3 Organic Eggs, R&ouml;sti Hash, Organic Greens, House Baked Sourdough or Multigrain Toast</p>
+			<h4>Burrito Grande | 15</h4>
+			<p>2 Organic Eggs, Farmer&#8217;s Sausage, Mexicana & Aged Cheddar, Spiced Monterey Jack, Red Peppers, Fresh Jalape&ntilde;os, Organic Greens, Served with Crema, Salsa Rojo, and Guacamole</p>
+			<h4>Big Breakfast | 9</h4>
+			<p>3 Sunny or Scrambled Organic Eggs, Bacon or Sausage, R&ouml;sti Hash, House Baked Sourdough or Multigrain Toast</p>
+			<h4>Steak & Eggs | 17</h4>
+			<p>8 oz AAA Baseball Sirloin, 2 Sunny or Scrambled Organic Eggs, R&ouml;sti Hash, House-Baked Sourdough or Multigrain Toast</p>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Kid's Menu -->
+	<div data-role="page" id="Kids_menu" data-title="kiddies" data-theme="c">
+		<div data-role="header" data-position="fixed">
+			<h1>Kids Menu</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h4>Just For Kids Choose One Item | 4</h4>
+			<p>Kids Under 10 / Includes Fountain Drinks (only)</p>
+			<p>Cheese or Pepperoni Pizza / Grilled Cheese / Mac & Cheese / Caesar Salad / Organic Greens / French Toast / Scrambled & Toast</p>
+			<h4>Ice Cream | 2</h4>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!-- Late Night -->
+	<div data-role="page" id="late_night" data-title="Latenight" data-theme="e">
+		<div data-role="header">
+			<h1>Late Night</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<a href="#hp_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Hodgepodge</a>
+			<a href="#gspuds_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Gastro-Spuds</a>
+			<a href="#lhand_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Handheld</a>
+			<a href="#ruff_menu" data-role="button" data-icon="star" data-iconpos="right" data-transition="pop">Ruffage</a>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Latenight Hodgepodge -->
+	<div data-role="page" id="hp_menu" data-title="Podge" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>HodgePodge</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>HODGEPODGE</h3>
+			<h6>Add your Sides from the <strong>&ldquo;Sides&rdquo;</strong> Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<h4>Quesadilla | 15</h4>
+			<p>Grilled Tortilla, Mexicana & Aged Cheddar, Spiced monterey Jack,, Diced Jalape&ntilde;o, R&ouml;sti-Hash, Served with Crema, Salsa Rojo, and Guacamole</p>
+			<h5>Add Duck Fat-Confit Pulled Pork or Pulled Chicken | 5  Double Cheese | 8</h5>
+			<h4>Smoked Chicken Lollipops | 3 each (min. order of 3)</h4>
+			<p>From Our Smoker! Frenched &#38; Dry-Rubbed Chicken Drumettes. How spicy do you like it? Georgia Peach & Vadalia Onion (Red Chili), Amazon (Chipotle), Gator Hammock (Cayenne), Marie Sharp&#8217;s (Habenero)</p>
+			<h4>One Layer Baker&#8217;s Tray Nachos Regular | 16 / Big | 28 / Party! | 49</h4>
+			<p>Hand&#45;Cut and Seasoned Blue &#38; Yellow Corn Tortillas, Mexicana &#38; Aged Cheddar, Spiced Monterey Jack, Diced Jalape&ntilde;os, Salsa Rojo Served with Crema, Salsa Rojo, and Guacamole</p>
+			<h4>Sloppy Joe Tacos | 10 / Big | 16</h4>
+			<p>Duck Fat Confit Lamb Shank, Mexicana & Aged Cheddar, Spiced Monterey Jack, Spicy Aioli, Shredded Green Leaf, Hard Shell Tacos Served with Crema, Salsa Rojo, and Guacamole</p>
+			<h4>Fungi Flatbread | 12 / Big | 21</h4>
+			<p>Fire-Roasted Woodland Mushrooms, Grand Chevalier Ch&egrave;vre (Goat Cheese), Italian Mozzarella, Garlic Paste, Truffle Oil, Caramelized Onion, Fresh Herbs</p>
+			<h5>Add Spicy or Black Garlic Aioli | 1 / Add Prosciutto Pio Tosini | 5</h5>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Late Night Spuds -->
+	<div data-role="page" id="gspuds_menu" data-title="spuds" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>Spuds</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;" data-position="fixed">
+			<h3>GASTRO&#45;SPUDS</h3>
+			<h6>Add your Sides from the <strong>&ldquo;Sides&rdquo;</strong> Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<h5>We use Duck Fat (DF). Tastier & Healthier.</h5>
+			<h4>DF Frites | 7 / DF Sweet Frites | 9 / DF Tater Tots | 10</h4>
+			<h5>Add Spicy or Black Garlic Aioli | 1</h5>
+			<h4>Gastrohouse Poutine | 12 / Big | 17</h4>
+			<p>Duck Confit, Marinated PQ Curds, DF Frites, Duck, Gravy, and Red Wine Jus</p>
+			<h5>No Duck? No Problem! | 9 / Big | 13</h5>
+			<h4>Chili-Cheese Poutine | 11</h4>
+			<p>Bison Chili, Mexicana &#38; Aged Cheddar, Spiced Monterey Jack, DF Frites, Crema, Chives</p>
+		</div>
+		<div data-role="footer" data-position="fixed"> 		
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Late Night Hand Held -->
+	<div data-role="page" id="lhand_menu" data-title="lhand" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>Handheld</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>HANDHELD</h3>
+			<h6>Add your Sides from the <strong>&ldquo;Sides&rdquo;</strong> Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<h4>Pulled Pork Grilled Cheese | 10 / Big | 17</h4>
+			<p>Duck Fat Confit-Pulled Pork, Black River Maple Cheddar, White Cheddar, House-Baked Sourdough, Raspberry Jalape&ntilde;o Compote</p>
+			<h5>No Pork? No Problem! 8/15 - Add Bacon 2/3</h5>
+			<h4>Triple Decker Italiano Club | 12</h4>
+			<p>Pulled Chicken, Prosciutto di Parma, Gran Padano, Fresh Basil, Vine-Ripened Tomato, Leaf Lettuce, Balsamic Mayo, House-Baked Sourdough</p>
+		</div>
+		<div data-role="footer" data-position="fixed"> 		
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Late Night Ruffage -->
+	<div data-role="page" id="ruff_menu" data-title="greens" data-theme="b">
+		<div data-role="header" data-position="fixed">
+			<h1>Ruffage</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>RUFFAGE</h3>
+			<h6>Add your Sides from the <strong>&ldquo;Sides&rdquo;</strong> Menu by Pressing the Up&#45;Arrow at the Bottom Left of your Screen</h6>
+			<h4>Organic Greens Appetizer | 8 / Entr&eacute;e | 12</h4>
+			<p>Organic Artisanal Greens, Accompaniments, Balsamic &#38; Cold Pressed EVO or Creamy Parmigiano-Reggiano Peppercorn</p>
+			<h5>Goat Cheese | 3 Pulled Chicken | 5</h5>
+			<h4>Caesar Your Way Appetizer | 7 /Entree | 11</h4>
+			<p>How do YOU like it? Light, Medium, or Heavily Dressed? Romaine, House-Made Caesar Dressing, Chopped Crisp Bacon, House-Baked Baguette Croutons, Grana Padano Crisps</p>
+			<h5>Add Pulled Chicken | 5</h5>
+		</div>
+		<div data-role="footer" data-position="fixed"> 		
+			<div style="text-align: center;">
+				<a href="#sides_menu" data-role="button" data-icon="carat-u" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="slideup"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-inline="true" data-iconpos="notext" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+		
+		
+		
+	<!-- Locations -->
+	
+	<div data-role="page" id="locations" data-title="Find a Locations" data-theme="c">
+		<div data-role="header">
+			<h1>Locations</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		
+		<div>  
+			<iframe src="https://mapsengine.google.com/map/embed?mid=zGSuRgFDT5HY.k96bRnNcFNAg" width="320" height="470"></iframe>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">			
+				<a href="#check_it" data-role="button" data-icon="eye" data-inline="true" data-mini="true" data-iconpos="notext"  data-transition="flip"></a>
+                                <a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+                                <a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--Hooch Drink Specials-->
+	
+	<div data-role="page" id="hooch" data-title="hooch" data-theme="b">
+		<div data-role="header" data-position="fixed" >
+			<h1>Hooch Specials</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;">
+			<h3>BEST HOOCH AT GREAT PRICES</h3>
+			<h3>4pm To 7pm &#38; 10pm To Midnight &#45; Everyday</h3>
+			<h4>5.09&#36;</h4>
+			<h5>Kettle One Vodka | Hendrick&#39;s Gin | Wiser&#39;s 18 Year Old Rye | Mount Gay Extra Old Rum | Woodford Reserve Bourbon | Jack Daniel&#39;s Single Barrel | Johnnie Walker Black 12 Year Old Scotch | Patr&#243;n Silver Tequila | Talisker 10 Year Old Single Malt Scotch</h5>
+			<h3>House Wines &#38; <strong>ALL</strong> our Beers &#45; Bottled &#38; Draught</h3>
+			<h4>5.09&#36;</h4>
+			<h3>Jagermeister &#38; Honey Jack</h3>
+			<h4>2.50&#36; All Day Everyday</h4>
+			
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- Check It! -->
+	<!-- Live Stream of Dance Floor from DJ Booth -->
+	<div data-role="page" id="check_it" data-title="Check It" data-theme="c">
+		<div data-role="header" data-position="fixed">
+			<h1>Check It</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div style="width: 100%; text-align: center;">
+			<video id="party"  controls>
+				<source src="video/party_vid.mp4" type="video/mp4" style="width: 100%; text-align: center;">
+				Please Update Your Browser
+			</video>
+		</div>
+		<div style="text-align: center; border: 2px solid #db0803; border-radius: 20px; padding:8px; margin: 2px;">
+			<h3>Check us out...</h3>
+			<h4>Each week we&#39;ll post a vid of the night life here so you can check out the vibe.</h4>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">			
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#contact_us" data-role="button" data-icon="mail" data-iconpos="notext" data-inline="true" data-rel="dialog" data-transition="pop" id="contact"></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Contact Us -->
+	<div data-role="page" id="contact_us" data-title="Contact Us" data-theme="c">
+		<div data-role="header" data-positon="fixed" >
+			<h1>Contact</h1>
+			<a href="#" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+		</div>
+		<div data-role="content" style="text-align: center;" data-position="fixed">
+			<a href="https://www.facebook.com/myprohibition"><img src="images/fb_white.gif" alt="fb"></a><br>
+			<a href="https://www.twitter.com/myprohibition"><img src="images/twitter_white.gif" alt="tw" style="margin-top: 30px;"></a><br>
+			<a href="https://www.instagram.com/prohibitiongh"><img src="images/inst_white.gif" alt="inst" style="margin-top: 30px;"></a><br>
+			<a href="#feed_back"><img src="images/mail_white.gif" alt="email"  style="margin-top: 30px; margin-bottom: 80px;"></a>
+			<!-- email feedback messages sent from here -->
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div style="text-align: center;">
+			<!-- Invite Friends From Contact List (App Share) -->
+			<!-- JavaScript and PhoneGap Here and in head -->			
+				<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+				<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+				<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+			</div>
+		</div>
+	</div>
+	
+			<!-- feedback email submission -->
+	
+		<div data-role="page" id="feed_back" data-title="feedback" data-theme="c">
+			<div data-role="header" data-positon="fixed" >
+				<h1>Message</h1>
+				<a href="#contact_us"  data-icon="carat-l" data-iconpos="notext" data-transition="slide"></a>
+			</div>
+		
+			<div id="feedback-form" class="clearfix" style="text-align: center;" data-position="fixed">
+				<h4>Get In Touch</h4>
+			
+				<form method="post">
+					<label for="name">Name: <span class="required">*</span></label>
+					<input type="text" id="name" name="name" value="" placeholder="John/Jane Doe" required="required" autofocus="autofocus" />
+				
+					<label for="email">Email Address: <span class="required">*</span></label>
+					<input type="email" id="email" name="email" value="" placeholder="john/janedoe@example.com" required="required" />
+				
+					<label for="message">Message: <span class="required">*</span></label>
+					<textarea id="message" name="message" placeholder="Your message must be at least 15 characters" required="required" data-minlength="15"></textarea>
+				
+					<a href="submit" type="submit" data-role="button" data-icon="comment" data-inline="true" data-iconpos="notext"></a>
+				</form>
+			</div>		
+		
+			<div data-role="footer" data-position="fixed">
+				<div style="text-align: center;">
+					<!-- Invite Friends From Contact List (App Share) -->
+					<!-- JavaScript and PhoneGap Here and in head -->			
+					<a href="#home" data-role="button" data-icon="home" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+					<a href="#Menu" data-role="button" data-icon="cutlery" data-mini="true" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+					<a href="#hooch" class="ui-icon-glass" data-role="button" data-icon="glass" data-inline="true" data-iconpos="notext" data-transition="pop"></a>
+					<a href="#locations" data-role="button" data-icon="location" data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop" ></a>
+					<a href=tel:4164062669 data-role="button" data-icon="phone"  data-inline="true" data-mini="true" data-iconpos="notext" data-transition="pop"></a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="cordova.js></script>
+		
+		
+	</body>
+</html>
